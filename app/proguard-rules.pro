@@ -20,4 +20,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep,allowoptimization class app.grapheneos.apps.**
+-keep,allowoptimization class app.katyasystem.apps.**

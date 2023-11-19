@@ -40,7 +40,7 @@
         </activity>
 
         <activity-alias
-            android:name="org.grapheneos.apps.client.ui.container.MainActivity"
+            android:name="org.katyasystem.apps.client.ui.container.MainActivity"
             android:targetActivity=".ui.MainActivity" />
 
         <service

@@ -37,10 +37,10 @@ android {
     compileSdk = 34
     buildToolsVersion = "34.0.0"
 
-    namespace = "app.grapheneos.apps"
+    namespace = "app.katyasystem.apps"
 
     defaultConfig {
-        applicationId = "app.grapheneos.apps"
+        applicationId = "app.katyasystem.apps"
         minSdk = 31
         targetSdk = 34
         versionCode = 21
@@ -48,7 +48,7 @@ android {
         resourceConfigurations.add("en")
 
         buildConfigField(String::class.java.name, "REPO_BASE_URL",
-            "\"${System.getenv("REPO_BASE_URL") ?: "https://apps.grapheneos.org"}\"")
+            "\"${System.getenv("REPO_BASE_URL") ?: "https://apps.katyasystem.org"}\"")
 
         buildConfigField(String::class.java.name, "REPO_PUBLIC_KEY", "\"${
             System.getenv("REPO_PUBLIC_KEY") ?: "RWQtZwEu1br1lMh911L3yPOs97cQb9LOks/ALBbqGl21ul695ocWR/ir"
