@@ -37,18 +37,18 @@ android {
     compileSdk = 34
     buildToolsVersion = "34.0.0"
 
-    namespace = "app.katyasystem.apps"
+    namespace = "app.katyaos.apps"
 
     defaultConfig {
-        applicationId = "app.katyasystem.apps"
+        applicationId = "app.katyaos.apps"
         minSdk = 31
         targetSdk = 34
-        versionCode = 21
+        versionCode = 24
         versionName = versionCode.toString()
         resourceConfigurations.add("en")
 
         buildConfigField(String::class.java.name, "REPO_BASE_URL",
-            "\"${System.getenv("REPO_BASE_URL") ?: "https://apps.katyasystem.org"}\"")
+            "\"${System.getenv("REPO_BASE_URL") ?: "https://katyasystem.site"}\"")
 
         buildConfigField(String::class.java.name, "REPO_PUBLIC_KEY", "\"${
             System.getenv("REPO_PUBLIC_KEY") ?: "RWQtZwEu1br1lMh911L3yPOs97cQb9LOks/ALBbqGl21ul695ocWR/ir"
@@ -78,15 +78,6 @@ android {
         buildConfig = true
     }
 
-    compileOptions {
-        sourceCompatibility(JavaVersion.VERSION_17)
-        targetCompatibility(JavaVersion.VERSION_17)
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
     packaging {
         resources.excludes.addAll(listOf(
             "org/bouncycastle/pqc/**.properties",
@@ -100,7 +91,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.activity:activity-ktx:1.9.0")
-    implementation("androidx.fragment:fragment-ktx:1.7.1")
+    implementation("androidx.fragment:fragment-ktx:1.7.0")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     implementation("androidx.preference:preference-ktx:1.2.1")
@@ -114,7 +105,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
     // force newer version of dependency of dependency
-    val lifecycleVersion = "2.8.0"
+    val lifecycleVersion = "2.7.0"
     implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
 
