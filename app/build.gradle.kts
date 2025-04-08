@@ -102,7 +102,7 @@ dependencies {
     implementation("org.bouncycastle:bcprov-jdk18on:1.80")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
     // force newer version of dependency of dependency
     val lifecycleVersion = "2.8.7"
