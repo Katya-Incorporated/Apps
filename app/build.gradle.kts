@@ -105,7 +105,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
     // force newer version of dependency of dependency
-    val lifecycleVersion = "2.8.7"
+    val lifecycleVersion = "2.9.0"
     implementation("androidx.lifecycle:lifecycle-viewmodel:$lifecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
 
